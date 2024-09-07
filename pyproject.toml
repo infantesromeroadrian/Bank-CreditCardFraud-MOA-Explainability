@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "bankcreditcardfraud"
+version = "0.1.0"
+description = ""
+authors = ["Adrian Infantes <infantesromeroadrian@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+pandas = "^2.2.2"
+matplotlib = "^3.9.2"
+scikit-learn = "^1.5.1"
+seaborn = "^0.13.2"
+mlflow = "^2.16.0"
+python-dotenv = "^1.0.1"
+together = "^1.2.11"
+imblearn = "^0.0"
+streamlit = "^1.38.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
