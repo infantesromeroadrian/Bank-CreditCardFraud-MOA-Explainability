@@ -1,3 +1,4 @@
+artifact_path: moa_model
 flavors:
   python_function:
     env:
@@ -6,13 +7,14 @@ flavors:
     loader_module: mlflow.sklearn
     model_path: model.pkl
     predict_fn: predict
-    python_version: 3.12.5
+    python_version: 3.9.6
   sklearn:
     code: null
     pickled_model: model.pkl
     serialization_format: cloudpickle
-    sklearn_version: 1.5.1
-mlflow_version: 2.16.0
-model_size_bytes: 2015392
-model_uuid: 79ebf9480d284b52a3f7f584f7014613
-utc_time_created: '2024-09-07 20:21:30.723966'
+    sklearn_version: 1.5.2
+mlflow_version: 2.17.1
+model_size_bytes: 2002107
+model_uuid: 95ae4a91438548dea8c5bb8ae9c911ca
+run_id: bd7c6f69b1984960bceb2c2117723ce7
+utc_time_created: '2024-10-25 15:17:22.598940'
