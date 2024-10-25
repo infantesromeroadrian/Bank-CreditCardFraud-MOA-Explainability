@@ -3,7 +3,7 @@ from sklearn.impute import SimpleImputer
 from imblearn.over_sampling import SMOTE
 from sklearn.model_selection import train_test_split
 import logging
-from src.utils.decorators import timer_decorator, error_handler, log_decorator
+from utils.decorators import timer_decorator, error_handler, log_decorator
 
 logger = logging.getLogger(__name__)
 

@@ -2,10 +2,16 @@ import streamlit as st
 import pandas as pd
 import joblib
 import mlflow.pyfunc
-from src.features.data_preparation import DataPreparation
-from src.model.prediction import Prediction
-from src.model.togetherAI import TogetherAIIntegration
+from model.togetherAI import TogetherAIIntegration
 from dotenv import load_dotenv
+from features.data_preparation import DataPreparation
+from model.prediction import Prediction
+from utils.decorators import timer_decorator, error_handler, log_decorator
+
+import sys
+import os
+sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
+
 
 
 # Cargar las variables de entorno del archivo .env
@@ -19,7 +25,7 @@ def load_model():
 # Cargar el pipeline de preparación de datos
 @st.cache_resource
 def load_data_prep():
-    return joblib.load("models/data_preparation.pkl")
+    return joblib.load("/Users/adrianinfantes/Desktop/AIR/CollegeStudies/MachineLearningPath/Portfolio/BankProjects/BankCreditCardFraud/models/data_preparation.pkl")
 
 # Preprocesar los datos de entrada del cliente
 def preprocess_input(data):

@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/adrianinfantes/Desktop/AIR/CollegeStudies/MachineLearningPath/Portfolio/BankProjects/BankCreditCardFraud/src/mlruns/925247871961684277/a28f10db873f4b4fa9e462a003b73c2b/artifacts
+end_time: 1729870535492
+entry_point_name: ''
+experiment_id: '925247871961684277'
+lifecycle_stage: active
+run_id: a28f10db873f4b4fa9e462a003b73c2b
+run_name: Model_0_Training
+run_uuid: a28f10db873f4b4fa9e462a003b73c2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1729870535228
+status: 3
+tags: []
+user_id: adrianinfantes
